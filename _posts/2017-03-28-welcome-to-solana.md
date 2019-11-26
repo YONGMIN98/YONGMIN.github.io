@@ -2,8 +2,8 @@
 title: Welcome to YONGMIN's HomePage!
 teaser: Self-Introduction
 category: intro
-tags: 
-reddit_post: 'https://www.reddit.com/r/Jekyll/comments/6258ln/welcome_to_solana/'
+tags: [About me,Life]
+
 
 ---
 Name: KIM YONG MIN<bn />
