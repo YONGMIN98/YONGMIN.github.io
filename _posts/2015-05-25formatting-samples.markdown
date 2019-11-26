@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MY ability about my coumputer language"
+title: "MY ability about my coumputer language!"
 date: 2015-05-25
 categories:
 ---
