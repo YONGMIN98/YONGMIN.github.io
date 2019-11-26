@@ -1,63 +1,78 @@
-
-# Sustain
-
-[![Build Status](https://secure.travis-ci.org/jekyller/sustain.png?branch=gh-pages)](http://travis-ci.org/jekyller/sustain)
-[![Ruby](https://img.shields.io/badge/ruby-2.4.2-blue.svg?style=flat)](http://travis-ci.org/jekyller/sustain)
-[![Jekyll](https://img.shields.io/badge/jekyll-3.6.2-blue.svg?style=flat)](http://travis-ci.org/jekyller/sustain)
-
-Personal blog built with [Bootstrap](http://getbootstrap.com/), powered by [Jekyll](http://jekyllrb.com/) and freely
-hosted in [Github pages](https://pages.github.com/).
+![](https://raw.githubusercontent.com/kkninjae/book/master/github/hero.png)
 
 
-## View the live demo
+# Book
 
-[Sustain Live Demo](https://jekyller.github.io/sustain)
-
-
-## Screenshots
-
-**Home page**
-![home page](https://raw.githubusercontent.com/jekyller/sustain/gh-pages/assets/images/screen1.png)
-
-**Blog page**
-![blog page](https://raw.githubusercontent.com/jekyller/sustain/gh-pages/assets/images/screen2.png)
-
-**Post page**
-![post page](https://raw.githubusercontent.com/jekyller/sustain/gh-pages/assets/images/screen3.png)
-
-**Projects page**
-![project page](https://raw.githubusercontent.com/jekyller/sustain/gh-pages/assets/images/screen4.png)
+Book, a simple and ready-to-use Jekyll theme. [Live](http://kkninjae.github.io/book/).
 
 
-## How to use it
+## How-to
 
-Simply clone/fork this repository, and then run `jekyll serve` inside the directory.
-Edit the site attributes in *_config.yml* and edit the various entries in *_includes/* and *_posts/*.
-
-
-## Issues and contributing
-
-I have tested this install with Ruby v2.4.2 (Mac OS RVM) and Jekyll v3.6.2. If you run into any problems please log them on the [issue tracker](https://github.com/jekyller/sustain/issues).
-
-Feel free pull-request your patches and fixes.
-
-#### Contributors
-
-[Sumit Murari](https://github.com/murarisumit), November 2015
+*   [Setup](#setup)
+*   [Customization](#customization)
+*   [Writing Posts](#writing-posts)
+*   [Deploy to Github Page](#deploy-to-gh-pages)
 
 
-## Thanks
+### <a name="setup" id>Setup</a>
 
-Profile picture from [pexels](https://www.pexels.com/photo/portrait-black-african-ethnicity-person-9494/).
+```sh
+# get a copy of book source code
+$ git clone https://github.com/kkninjae/book.git
+
+# running site locally
+$ jekyll serve -w
+
+# from now, you should be able to start development or customization
+```
 
 
-## Copyright & License
+### <a name="customization">Customization</a>
 
-Copyright (C) 2015-2017 - Released under the MIT License.
+Book is designed as simple as possible, but few changes can make your site uniq.
+You only need to change the values of keys in `_config.yml` file.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+*   Change site path: `baseurl`
+*   Give your site a name: `title`
+*   Make a site favicon: `favicon`
+*   Make a special home button image: `avatar`
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Last but not least
+
+*   If you are using Google analytics: `ga`
+*   If you are using Disqus commenting system: `disqus`
+
+
+### <a name="writing-posts">Writing Posts</a>
+
+Make a markdown file in `_posts` directory,
+follow [Jekyll post naming convention](https://jekyllrb.com/docs/posts/) to name your post,
+and put following front matter to the top of your post.
+You should be able to start to write your awesome post.
+Read this [POST](https://kkninjae.github.io/book/2015/08/28/how-to-use-book.html) to know more tips.
+
+```markdown
+---
+title: Your awesome post title
+date: YYYY-MM-DD
+---
+```
+
+
+### <a name="deploy-to-gh-pages">Deploy to Github Page</a>
+
+There is a deploying script built out of box.
+You need to install one more tool before using it which is [npm](https://www.npmjs.com/get-npm).
+This script will push your current static site to `gh-pages` branch.
+If there is no `gh-pages` branch yet, the script will create it for you.
+
+```sh
+# start to deploy your site to Github pages
+$ npm run deploy
+```
+
+
+## End.
+
+If you like this theme, why not give it a star. :)

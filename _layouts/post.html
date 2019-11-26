@@ -1,46 +1,46 @@
 ---
-layout: layout
+layout: page
 ---
 
-<div class="container">
-	<div class="blog-post">
-		<h3>
-		  <strong><a href="{{ page.url }}">{{ page.title }}</a></strong>
-		</h3>
-	</div>
-	<div class="blog-title">
-		<h4>
-		{{ page.date | date: "%B %e, %Y" }}
-			&nbsp;&nbsp;
-			{% for tag in page.tags %}
-			 <span class="label label-success">{{ tag }}</span>
-			{% endfor %}
-		</h4>
-	</div>
-	<div class="panel panel-default">
-		<div class="panel-body">
-			<div class="blogpost">
-			  {{ content }}
-			   <hr>
-			   <div class="related-posts">
-				   <h5>Related Posts</h5>
-				   {% for post in site.related_posts limit:3 %}
-						<div class="row">
-							 <div class="col-sm-4 col-md-4 col-lg-4">
-								 <h6 style="text-align: right">
-								 	{{ post.date | date: "%B %e, %Y" }}
-								 </h6>
-							 </div>
-							 <div class="col-sm-8 col-md-8 col-lg-8">
-								 <h6 style="text-align: left">
-								 	<strong><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></strong>
-								 </h6>
-							 </div>
-						</div>
-					{% endfor %}
-			   </div>
-			</div>
-		</div>
-	</div>
-	{% include disqus.html %}
+<div class="post">
+
+  <div class="card">
+
+    {% if page.title %}
+    <h1 class="card__title article_title">{{ page.title | capitalize }}</h1>
+    {% endif %}
+
+    {% if page.date %}
+    <div class="card__date">{{ page.date | date: "%Y / %m / %d" }}</div>
+    {% endif %}
+
+    <div class="article__content">{{ content }}</div>
+
+  </div>
+
+
+  <div class="post__comment">
+    {% if site.disqus and page.comment %}
+    <div class="post__comment--on">
+      {% assign url = page.url | absolute_url %}
+      {% include disqus.html username = site.disqus url = url id = page.id %}
+    </div>
+    {% else %}
+    <div class="post__comment--off">Comment is not allowed.</div>
+    {% endif %}
+  </div>
+
+
+  <div class="post__pagination">
+    <ul>
+      {% if page.next %}
+      <li>{% include card.html post=page.next volume='less' %}</li>
+      {% endif %}
+
+      {% if page.previous %}
+      <li>{% include card.html post=page.previous volume='less' %}</li>
+      {% endif %}
+    </ul>
+  </div>
+
 </div>
