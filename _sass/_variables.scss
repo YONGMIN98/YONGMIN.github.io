@@ -1,47 +1,44 @@
-/* site variables */
+// Typography
+// --------------------------------------------------
 
-/* color
-   ========================================================================= */
-$base-background-color: #f8f8f8;
-$link-text-color: #6599FF;
-$button-link-text-color: #9B9B9B;
-$post-base-text-color: #606060;
-$post-date-text-color: #b9b9b9;
+$base-font: 'Lato', Calibri, Arial, sans-serif;
+$heading-font: $base-font;
+$caption-font: $base-font;
+$code-font: monospace;
+$alt-font: serif;
 
-
-/* font
-   ========================================================================= */
-$base-font-family: 'Titillium Web', sans-serif;
+$doc-font-size: 16;
+$doc-line-height: 26;
 
 
-/* breakpoints
-   ========================================================================= */
-$breakpoint-medium: 769px;
-$breakpoint-large: 1024px;
+// set-up the body font-size / line-height
+body {
+	margin-top: 0px + $doc-line-height;
+	font-size: 0px + $doc-font-size;	
+}
 
 
-/* z-index
-   ========================================================================= */
-$zindex-low: 1;
-$zindex-medium: 2;
-$zindex-high: 3;
+// Colors
+// --------------------------------------------------
+$base-color				   : rgba(#222,0.8);
+$body-color      		 : #e8e8e8;
+$text-color      		 : rgba(#222,0.8);
+$comp-color 	 		   : complement(#222); 
+$border-color    		 : lighten($base-color,60);
+$white           		 : #fff;
+$black           		 : #000;
+$link-color 		     : rgba(#222,0.8);
+
+$primary			       : #222;
+$success			       : #5cb85c;
+$warning			       : #dd8338;
+$danger				       : #C64537;
+$info				         : #308cbc;
 
 
-/* header variables
-   ========================================================================= */
-$header-mobile-height: 16rem;
-$header-desktop-width: 23.4375rem;
-$header-avatar-height: 6.875rem;
-$header-avatar-desktop-top: 9.0625rem;
+// Screen Size
+// --------------------------------------------------
 
-
-/* navigation variables
-   ========================================================================= */
-$navigation-item-desktop-top: 1.25rem;
-$navigation-item-height: 1.5625rem;
-$navigation-item-tail-width: $navigation-item-height / 3;
-
-
-/* footer variables
-   ========================================================================= */
-$footer-height: 4.25rem;
+$small               : "only screen and (min-width: 30em)";
+$medium              : "only screen and (min-width: 48em)";
+$large               : "only screen and (min-width: 62.5em)";

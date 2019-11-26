@@ -1,4 +1,64 @@
-<footer class="footer clear-header--left">
-  <div class="footer__note">&copy; 2017 Book</div>
-  <div class="footer__note">Built with <a href="https://github.com/kkninjae/book" target="_blank">Book</a>, a <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> theme. <a href="{{ '/feed.xml' | relative_url }}" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6.503 20.752c0 1.794-1.456 3.248-3.251 3.248-1.796 0-3.252-1.454-3.252-3.248 0-1.794 1.456-3.248 3.252-3.248 1.795.001 3.251 1.454 3.251 3.248zm-6.503-12.572v4.811c6.05.062 10.96 4.966 11.022 11.009h4.817c-.062-8.71-7.118-15.758-15.839-15.82zm0-3.368c10.58.046 19.152 8.594 19.183 19.188h4.817c-.03-13.231-10.755-23.954-24-24v4.812z"/></svg></a></div>
+<!-- SCRIPT FOR GOOGLE PLUS PLUG-IN -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<!-- SCRIPT FOR FACEBOOK PLUG-IN -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<style>
+footer {
+    
+    color: #222222;
+    padding-bottom: 10px;
+    
+}
+footer.basic {
+    background-color: #3D5B99 ;
+    color: #fff;
+}
+footer span a:link {
+  color: #222222;
+}
+footer span a:visited {
+  color: #222222;
+}
+
+#footer-bar{
+    background-color: #000;
+    font-size: 15px;
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+}
+#footer-bar ul {
+    list-style-type: none;
+    padding-left: 0;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 5px;
+}
+#footer-bar ul li {
+    display: inline;
+    margin-right: 30px;
+}
+#footer-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 3px;
+    transition: color 0.3s, background 0.1s;
+}
+#footer-bar ul li a:hover {
+    color: #fff;
+    background-color: #39538B;
+}
+</style>
+<footer>
+  <span><a href="#">&#9650; Go Top</a></span>
 </footer>
