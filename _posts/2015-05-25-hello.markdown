@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introduce myself"
-date: 2015-05-25
+date: 
 categories:
 ---
 Name: KIM YONG MIN <bn/>
