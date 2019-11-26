@@ -1,42 +1,31 @@
-permalink   : /:categories/:year/:title/
-markdown    : kramdown
-highlighter : pygments
+# top level stuff you probably don't need to touch
+highlighter: rouge
+markdown: kramdown
+rdiscount:
+  extensions: [smart]
+permalink: /:title.html
+paginate: 5
+plugins: [jekyll-paginate]
+port: 3000
+safe: true
 
-paginate: 2 #6
-comments: true
-paginate_path: "/page/:num"
 
-source: source
-destination: _site
-sass:
-  sass_dir: _scss
-  style: compressed
+# edit here to achieve your personal greatness
+url: http://username.github.io/
+baseurl: /sustain/
+title: Chris Turner
+author: Chris Turner
+description: Personal blog and resume
+avatar: profile.png
+email: yourname@email.com
+github: jekyller/sustain # username
+twitter: username
+linkedin: username
+stackoverflow: username   #e.g: users/2735833/proton1h1
+#Comment out if you don't want disqus
+disqus: username
+google_analytics: UA-69391421-1
 
-# Site settings
-title: Lora
-description: "A free Jekyll theme"
-email: your-email@domain.com
-baseurl: "" # the subpath of your site, e.g. /blog/
-#url: "http://yourdomain.com"
-url: "http://nandomoreira.me/lora"
-repository: "https://github.com/nandomoreirame/lora"
-disqus_shortname: "fernandomoreira"
-google_analytics: UA-52446115-1
 
-# social footer
-social:
-  github:
-    slug: github
-    link: http://github.com/nandomoreirame
-  facebook:
-    slug: facebook
-    link: http://facebook.com/fernando.dev
-  twitter:
-    slug: twitter
-    link: http://twitter.com/nandomoreirame
-  instagram:
-    slug: instagram
-    link: http://instagram.com/nandomoreira.me
-  linkedin:
-    slug: linkedin
-    link: http://linkedin.com/in/nandomoreirame
+# needed for travis-ci build
+exclude: [vendor]
