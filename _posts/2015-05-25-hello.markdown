@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Introduce myself"
+date: 
+categories:
+---
+Name: KIM YONG MIN <bn/>
+
+AGE: 22 <bn/>
+
+Affiliation: Kangwon University <bn/>
+
+
