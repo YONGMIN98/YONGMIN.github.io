@@ -1,48 +1,40 @@
-<h2>How to use your own domain for github page?</h2>
-<a href="https://www.youtube.com/watch?v=sTBY0D4gLg4" target="_blank">View my tutorials video here!</a>
-<br><br><br>
-<h2>How to use this template?</h2>
-You can fork this project to your own project. <br>
-Ex: fork and rename this repository to "yourname", you'll get the following address: yourusername.github.io/yourname
-<br>Or clone it to your local (by using gitGUI or from cmd line), modify something and push from local to your account. <br>
-<h2>How to change my title and something else? </h2>
-Go to <b>_config.yml</b> file and change to what you want, you can add some social account to your profile view.
+# brume
 
-<h2>How to create new posts ?</h2>
-create new file in <b>_posts</b> folder, the name of the file should be begin with "yyyy-mm-dd" and separated by "-" (dash) and end with ".md" (markdown format). Ex: "2015-05-12-documents.md" <br>
-In the beginning of the content, copy and paste following:
+I am not a designer so I cannot impress you with breathtaking Jekyll themes, but brume is something that just came to my mind and I had to build it. It is a clean and simple theme, which has an index page that lists all your blog posts divided by the year, a single post page and a layout for any additional pages you might need.
 
-```
---- 
-layout: post
-title:
-description: "abcd"
-modified: 2014-12-23
-tags: [abc, def]
----
-```
+This is how the "Home" page looks like.
 
-<br>
-change your title, tag, modified date time...
+![Home](https://raw.githubusercontent.com/aigarsdz/brume/master/screenshots/home.png)
 
-<br>
-<h2>How to post code?</h2>
-use: <br>
+And this is a single post.
 
-```
-{% highlight css %}
-{% endhighlight %}
-```
+![Post](https://raw.githubusercontent.com/aigarsdz/brume/master/screenshots/post_1.png)
 
-<br>
-you can change "css" to some other languages such as cpp, java, html...
-<br>
-<br>
-<h2>How to add or change menu on the left side? </h2>
-Go to <b> _includes/navigation.html </b>
+![Post. More content examples.](https://raw.githubusercontent.com/aigarsdz/brume/master/screenshots/post_2.png)
 
-<h2>How to change color or anything else in the fixed navigation bar at the top? </h2>
-Go to <b>_includes/head.html</b>
+## Usage
 
-<h2>How about the background color?</h2>
-Go to <b>_sass/_page.scss</b>
+Brume can be installed just like any other Jekyll theme as described [here](https://jekyllrb.com/docs/themes/#installing-a-theme),
+but there are a couple of additional steps you have to take.
+
+1. All the links are defined in a file *_data/links.yml*, therefore you'll have to create a *_data*
+directory and put this file there in order for navigation to be displayed.
+2. Brume uses `home` layout for the home page (like the default Jekyll theme). All you need to do
+is create an *index.html* or *index.md* file with `layout: home`. If you want the home page to be
+listed in the navigation you have to add `title` to it's front matter that matches
+the title you used for the home page link in the *links.yml* file. Titles are used to indicate
+the current page.
+
+## Theme customization
+
+This theme has 4 predefined colors that can be used for links:
+
+- azul
+- ruby
+- amber
+- avocado
+
+By default it uses *avocado*, but if you want to select another one just change the `color_scheme` setting in
+*_config.yml* file.
+
+Express your thoughts about brume on Twitter [@aigarsdz](http://twitter.com/aigarsdz), and help me make it better!
