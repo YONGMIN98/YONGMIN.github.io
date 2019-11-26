@@ -1,8 +1,9 @@
 ---
 layout: default
-nav: home
-comment: false
+title: Home
 ---
-{% include about.html %}
-{% include blog.html %}
-{% include projects.html %}
+
+<div class="hero">
+  <img src="{{ site.baseurl }}{{ site.hero.image }}" />
+  <p>{{ site.hero.caption }}</p>
+</div>

@@ -1,7 +1,23 @@
-# Blog of Song Kong
-This is a Jekyll theme called Ice bear.
+# Codinfox-Lanyon
 
-To learn how to install and use this theme, please check out the [installation guide](http://kongsong.me/blog/ice-bear-jekyll-theme/) for more information.
+This is a jekyll template based on [Lanyon](https://github.com/poole/lanyon). See a live demo [here](http://codinfox.github.io).
+
+**If you like this project, PLEASE give it a star.**
+
+Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
+
+All the configurations are inside either `_config.yml` or `_config.scss`. The options are fairly straightforward. 
+
+The theme supports: 
+
+1. Theme colors: you can choose your favorite theme color
+2. Changable sidebar locations
+3. Integration of FontAwesome, MathJax, Disqus and Google Analytics
+4. and numerous improvements over original Lanyon
+
 
 ## License
-This theme is open source under MIT License. So feel free to use this Jekyll theme on your site, although linking back to me is more than welcomed.
+
+Open sourced under the [MIT license](LICENSE.md).
+
+<3
