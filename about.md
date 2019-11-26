@@ -1,8 +1,11 @@
 ---
+layout: page
 title: About
 permalink: /about/
 ---
 
-<p class="heavy-title"><a href="http://github.com/thinker3197/Ink">Ink</a> is a simple & minimalistic theme for <a href="http://jekyllrb.com">Jekyll</a>, a static site generator.</p>
+Taken is a two column minimalist Jekyll theme.
 
->Designed and developed by [@thinker3197](https://github.com/thinker3197).
+Taken is based on [chapter tumblr theme.](http://theme-chapter.tumblr.com/)
+
+You can fork taken from [here.](https://github.com/vfalanis/taken)

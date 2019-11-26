@@ -1,10 +1,15 @@
 ---
 layout: default
 ---
+<article class="post">
 
-{% include header.html %}
+  <header class="post-header">
+    <h2 class="post-title">{{ page.title }}</h2>
+    <hr>
+  </header>
 
-<div class="content page">
-  <h1 class="page-title">{{ page.title }}</h1>
-  {{ content }}
-</div>
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>
