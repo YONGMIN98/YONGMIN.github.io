@@ -1,23 +1,7 @@
-# PanelCV
+# Blog of Song Kong
+This is a Jekyll theme called Ice bear.
 
-This theme is designed by [flexycodex](https://themeforest.net/item/flexyvcard-responsive-vcard-template-/7158750) and modified by [Locky](https://github.com/junlulocky)
+To learn how to install and use this theme, please check out the [installation guide](http://kongsong.me/blog/ice-bear-jekyll-theme/) for more information.
 
-I have made this into a Jekyll Theme. Demo: [https://jekyller.github.io/PanelCV](https://jekyller.github.io/PanelCV)
-
-The theme would look like this 
-
-![Demo](/images/demo.png)
-
-
-# Installation
-
-- Fork the repository
-- Go to settings and set Github Pages source as master.
-- Your new site should be ready at https://username.github.io/PanelCV/
-
-Check out for more themes: [Jekyll Themes](http://jekylltheme.org)
-
-
-# Author
-
-- [Locky](https://github.com/junlulocky)
+## License
+This theme is open source under MIT License. So feel free to use this Jekyll theme on your site, although linking back to me is more than welcomed.
