@@ -1,17 +1,49 @@
-# Much-Worse jekyll theme
+# Lora - free Jekyll theme
 
-This theme is avaiable under [MIT License](https://opensource.org/licenses/MIT).
+> :warning:
+  This theme requires ruby and rubygems installed
 
-This is a modified version of [Steve Miller's NGVM theme](http://jekyllthemes.org/themes/svm-ngvb/). Since this work is a derivative of Prof. Miller's, therefore it is only fair that I honour his self-deprecating spirit and name this **much-worse**. I prefer large seriff fonts and minimal coloring and styling. Apart form the typography, color scheme and layout,
-this theme has two useful changes:
 
-- It allows you to maintain your website as a subdirectory on your university of company domain (e.g. http://university.edu/department/people/your-website). Most Jekyll blogs are
-designed to be hosted at custom domain names.
 
-- Most jekyll themes are blog-centric, or single page websites. This theme lets you create multi-page website with a blog if you want.
+---
 
-Both the above are not seminal achievements in science, but they are useful. This theme also supports site analytics including [Statcounter](http://statcounter.com) and major comment providers for blogs.
+### Start in 4 steps
 
-See it in action [here](http://people.csail.mit.edu/gchauras).
+1. Download or clone repo `git clone git@github.com:nandomoreirame/lora.git`
+2. Enter the folder: `cd lora/`
+3. Install Ruby gems: `bundle install`
+4. Start Jekyll server: `jekyll serve`
 
-Feel free to send me pull requests with better responsive performance or cleaner HTML/CSS.
+Access, [localhost:4000](http://localhost:4000/)
+
+### Deploy in Github pages in 2 steps
+
+1. Change the variables `GITHUB_REPONAME` and `GITHUB_REPO_BRANCH` in `Rakefile`
+2. Run `rake` or `rake publish` for build and publish on Github
+
+---
+
+### Using Rake tasks
+
+* Create a new page: `rake page name="contact.md"`
+* Create a new post: `rake post title="TITLE OF THE POST"`
+
+---
+
+### Demo and Download
+
+[Demo](https://nandomoreirame.github.io/lora/)
+[Download](https://github.com/nandomoreirame/lora/archive/master.zip)
+
+![Lora - free Jekyll theme](/screenshot.png)
+
+---
+
+### Copyright and license
+
+Lora is under [the MIT license](/LICENSE).
+
+> :warning:
+  Please remove metas `<meta name="robots" content="noindex">` and `<meta name="googlebot" content="noindex">` in `_layouts/default.html`
+
+Enjoy :yum:

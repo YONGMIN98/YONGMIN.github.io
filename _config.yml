@@ -1,57 +1,42 @@
-title: Geeky corner
-description: Much-Worse Jekyll theme for academic page and blog
-sourcecode: "https://github.com/gchauras/much-worse-jekyll-theme"
+permalink   : /:categories/:year/:title/
+markdown    : kramdown
+highlighter : pygments
 
-permalink: blog/:year/:month/:day/:title
-exclude: ["Makefile", "README.md"]
+paginate: 2 #6
+comments: true
+paginate_path: "/page/:num"
 
-url: "http://gchauras.github.io"     # the base hostname & protocol for your site
-baseurl: "/much-worse-jekyll-theme"                   # the subpath of your site, e.g. /blog
+source: source
+destination: _site
+sass:
+  sass_dir: _scss
+  style: compressed
 
-author:
-    name:
-    facebook:
-    scholar:
+# Site settings
+title: Lora
+description: "A free Jekyll theme"
+email: your-email@domain.com
+baseurl: "" # the subpath of your site, e.g. /blog/
+#url: "http://yourdomain.com"
+url: "http://nandomoreira.me/lora"
+repository: "https://github.com/nandomoreirame/lora"
+disqus_shortname: "fernandomoreira"
+google_analytics: UA-52446115-1
 
-# Build settings
-markdown: kramdown
-highlighter: rouge
-
-# Settings for analytics helper
-# Set 'provider' to the analytics provider you want to use.
-# Set 'provider' to false to turn analytics off globally.
-#
-analytics:
-    provider:
-    statcounter:
-        sc_project  :
-        sc_security :
-        sc_invisible: 1
-        sc_text     : 2
-    google:
-        tracking_id: ''
-    getclicky:
-      site_id:
-    mixpanel:
-        token: ''
-    piwik:
-        baseURL: '' # Piwik installation address (without protocol)
-        idsite: ''  # the id of the site on Piwik
-
-# Settings for comments helper
-# Set 'provider' to the comment provider you want to use.
-# Set 'provider' to false to turn commenting off globally.
-#
-comments:
-    provider:
-    disqus:
-      short_name:
-    livefyre:
-      site_id:
-    intensedebate:
-      account:
-    facebook:
-      appid:
-      num_posts: 5
-      width: 580
-      colorscheme: light
+# social footer
+social:
+  github:
+    slug: github
+    link: http://github.com/nandomoreirame
+  facebook:
+    slug: facebook
+    link: http://facebook.com/fernando.dev
+  twitter:
+    slug: twitter
+    link: http://twitter.com/nandomoreirame
+  instagram:
+    slug: instagram
+    link: http://instagram.com/nandomoreira.me
+  linkedin:
+    slug: linkedin
+    link: http://linkedin.com/in/nandomoreirame
