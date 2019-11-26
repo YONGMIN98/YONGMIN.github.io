@@ -4,8 +4,8 @@ title: "Introduce myself"
 date: 2015-05-25
 categories:
 ---
-Name: KIM YONG MIN
-AGE: 22 
-Affiliation: Kangwon University
+Name: KIM YONG MIN <bn />
+AGE: 22 <bn />
+Affiliation: Kangwon University <bn />
 
 
