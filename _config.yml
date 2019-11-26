@@ -1,51 +1,17 @@
-name:               "Ink"
-description:        "A minimalistic jekyll theme for humans"
+# Site settings
+title: Polar Bear
 
-url:                ""
-author:             "thinker3197"
-email:              "jhondoe@abc.com"
-gravatar_hash:      "205e460b479e2e5b48aec07710c08d50"
-twitter:            "jhondoe"
-email:              "jhondoe@abc.com"
-github:             "jhondoe"
-pinterest:          "jhondoe"
-linkedin:           "jhondoe"
-facebook:           "jhondoe"
+email: 
+description: > # this means to ignore newlines until "baseurl:"
+  Jekyll Theme Demo
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://username.github.io" # the base hostname & protocol for your site
+twitter_username: username
+github_username: username
 
-disqus_shortname:   "thinker3197"
+# Build settings
+markdown: redcarpet
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
 
-background:         "http://apple.wallpapersfine.com/wallpapers/original/1242x2208/w-5273.jpg"
-
-paginate:           5
-paginate_path:      "/page:num/"
-
-baseurl:            ""
-permalink:          /:year/:month/:day/:title/
-
-markdown:           kramdown
-
-nav:
-  - name:           "About"
-    href:           "/about"
-  - name:           "Download"
-    href:           "/releases"
-
-sass:
-  style:            :compressed
-
-defaults:
-  -
-    scope:
-      path:         ""
-      type:         "pages"
-    values:
-      layout:       "page"
-  -
-    scope:
-      path:         ""
-      type:         "posts"
-    values:
-      layout:       "post"
-
-gems:
-  - jekyll-paginate
+redcarpet:
+  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "fenced_code_blocks"]
