@@ -1,35 +1,30 @@
-# taken
+# Moon Jekyll Theme [![Donate](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.me/taylantatli/0usd)  
+  
+## `Sorry guys but there will be no update until I buy a new laptop.`
+    
+######(If you like this theme or using it, please give a :star: for motivation.)
 
-Taken is a minimalist two-column jekyll theme based on chapter tumblr theme 
-
-![Taken](https://github.com/vfalanis/taken/blob/master/Taken.png)
-
-## Updates
-
-Note: There's a stable branch (v1.0) which includes the default taken theme.
-Master and gh-pages branch now include the latest changes:
-
-* Better responsive support ( sidebar collapse)
-* Fade in animations
-
+**[Moon](https://taylantatli.github.io/Moon)** is a minimal, one column jekyll theme.
 
 ## Features
-* Flickr feed
-* Disqus
-* more ...
+* Minimal, you can focus on your content
+* Responsive
+* Disqus integration
+* Syntax highlighting
+* Optional post image
+* Social icons
+* Page for sharing projects
+* Optional background image
+* Simple navigation menu
+* MathJax support
 
-## Demo
-You can see a live demo of "taken" [here](http://vfalanis.github.io/taken)
+## Preview
 
-## Instructions
+![screenshot of Moon](https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png)    
+![screenshot of Moon](https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png)
 
-1. Fork this repository
-2. Clone the repository to your computer.<br />`git clone https://github.com/YOURUSERNAME/taken.git` 
-3. Run it.<br />`jekyll serve`
-4. Go to http://127.0.0.1:4000.
+See a [live version of Moon](https://taylantatli.github.io/Moon) hosted on GitHub.
 
-## To do list:
-* Categories support
-* Add portfolio section
-* Flickr plugin animation and configuration
-* More...
+## Getting Started
+
+To learn how to install and use this theme check out the [Setup Guide](https://taylantatli.github.io/Moon/moon-theme/) for more information.
