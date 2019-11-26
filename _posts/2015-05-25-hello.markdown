@@ -6,7 +6,13 @@ categories:
 ---
 Name: KIM YONG MIN <bn/>
 
+Birth: 1998.08.06<bn/>
+
 AGE: 22 <bn/>
+
+Family: Father, MOther,Me, Sister, Brother<bn/>
+
+Blood Type: B
 
 Affiliation: Kangwon University <bn/>
 
