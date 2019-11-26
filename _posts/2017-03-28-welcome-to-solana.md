@@ -4,8 +4,7 @@ teaser: Self-Introduction
 category: intro
 tags: 
 reddit_post: 'https://www.reddit.com/r/Jekyll/comments/6258ln/welcome_to_solana/'
-featured_comments:
-  - url: 'https://www.reddit.com/r/Jekyll/comments/6258ln/welcome_to_solana/dfkw5k2/'
+
 ---
 Name: KIM YONG MIN<bn />
 
