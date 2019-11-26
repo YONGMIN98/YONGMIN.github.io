@@ -1,63 +1,57 @@
-# Site Info
-title: Codinfox Lanyon
-tagline: 'A Jekyll theme based on Lanyon'
-description: 'A Jekyll theme adapted from <a href="http://lanyon.getpoole.com/" target="_blank">Lanyon</a>. Made by <a href="http://codinfox.github.io" target="_blank">@codinfox</a>.'
-baseurl: "/lanyon"
-url: http://codinfox.github.io
-logo: '/public/logo.png'
+title: Geeky corner
+description: Much-Worse Jekyll theme for academic page and blog
+sourcecode: "https://github.com/gchauras/much-worse-jekyll-theme"
 
-# Site configurations
-gems:
-  - jekyll-paginate
-markdown: kramdown
-kramdown:
-  input: GFM
-excerpt_separator: "<!-- more -->"
-sass:
-  style: compressed
-  sass_dir: _scss    
-paginate: 5
-paginate_path: '/blog/page:num'
-permalink: pretty
+permalink: blog/:year/:month/:day/:title
+exclude: ["Makefile", "README.md"]
 
-version: 1.0.0
+url: "http://gchauras.github.io"     # the base hostname & protocol for your site
+baseurl: "/much-worse-jekyll-theme"                   # the subpath of your site, e.g. /blog
 
-# About/contact
 author:
-  name: Codinfox
-  description: A passionate <strong>developer and researcher</strong>, learning to be a giant.
-  gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
-  contact:
-    linkedin:  https://www.linkedin.com/in/lizhihao
-    github:    https://github.com/codinfox
-    # facebook:  <hide>
-    twitter:   https://twitter.com/Li_Zhihao
-    weibo:     http://weibo.com/41173780
-    email:     http://www.google.com/recaptcha/mailhide/d?k=01I3lZFiZYng9N3QxYEtsDaQ==&c=31wAnZkuKqcG0ATAqJN8Z3ln5kkYLA9TwkGc-IbygpM=
+    name:
+    facebook:
+    scholar:
 
-# Navigation (2nd level links supported)
-nav:
-  Home:           
-    - '/'
-  Blog:           
-    - '/blog/'
-    - { Categories: '/blog/categories/' }
-    - { Tags: '/blog/tags/' }
-  About:          
-    - '/about/'
-  Github Project: 
-    - 'http://codinfox.github.io/'
+# Build settings
+markdown: kramdown
+highlighter: rouge
 
-# Where are tags and categories displayed
-tag_page: '/blog/tags/'
-category_page: '/blog/categories/'
+# Settings for analytics helper
+# Set 'provider' to the analytics provider you want to use.
+# Set 'provider' to false to turn analytics off globally.
+#
+analytics:
+    provider:
+    statcounter:
+        sc_project  :
+        sc_security :
+        sc_invisible: 1
+        sc_text     : 2
+    google:
+        tracking_id: ''
+    getclicky:
+      site_id:
+    mixpanel:
+        token: ''
+    piwik:
+        baseURL: '' # Piwik installation address (without protocol)
+        idsite: ''  # the id of the site on Piwik
 
-hero:
-  image: /public/img/we_will_be_giants_by_yalestewart.jpg
-  caption: Original Artwork &copy; <a href="http://yalestewart.deviantart.com/art/We-Will-Be-Giants-370176475">Yale Stewart</a>
-
-# Puglins
-mathjax: true # whether support mathjax
-google_analytics_token: 'UA-00000000-1' # leave blank if you don't want google analytics
-disqus_short_name: 'your_short_name' # leave blank if you don't want disqus
-
+# Settings for comments helper
+# Set 'provider' to the comment provider you want to use.
+# Set 'provider' to false to turn commenting off globally.
+#
+comments:
+    provider:
+    disqus:
+      short_name:
+    livefyre:
+      site_id:
+    intensedebate:
+      account:
+    facebook:
+      appid:
+      num_posts: 5
+      width: 580
+      colorscheme: light

@@ -1,23 +1,17 @@
-# Codinfox-Lanyon
+# Much-Worse jekyll theme
 
-This is a jekyll template based on [Lanyon](https://github.com/poole/lanyon). See a live demo [here](http://codinfox.github.io).
+This theme is avaiable under [MIT License](https://opensource.org/licenses/MIT).
 
-**If you like this project, PLEASE give it a star.**
+This is a modified version of [Steve Miller's NGVM theme](http://jekyllthemes.org/themes/svm-ngvb/). Since this work is a derivative of Prof. Miller's, therefore it is only fair that I honour his self-deprecating spirit and name this **much-worse**. I prefer large seriff fonts and minimal coloring and styling. Apart form the typography, color scheme and layout,
+this theme has two useful changes:
 
-Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
+- It allows you to maintain your website as a subdirectory on your university of company domain (e.g. http://university.edu/department/people/your-website). Most Jekyll blogs are
+designed to be hosted at custom domain names.
 
-All the configurations are inside either `_config.yml` or `_config.scss`. The options are fairly straightforward. 
+- Most jekyll themes are blog-centric, or single page websites. This theme lets you create multi-page website with a blog if you want.
 
-The theme supports: 
+Both the above are not seminal achievements in science, but they are useful. This theme also supports site analytics including [Statcounter](http://statcounter.com) and major comment providers for blogs.
 
-1. Theme colors: you can choose your favorite theme color
-2. Changable sidebar locations
-3. Integration of FontAwesome, MathJax, Disqus and Google Analytics
-4. and numerous improvements over original Lanyon
+See it in action [here](http://people.csail.mit.edu/gchauras).
 
-
-## License
-
-Open sourced under the [MIT license](LICENSE.md).
-
-<3
+Feel free to send me pull requests with better responsive performance or cleaner HTML/CSS.
