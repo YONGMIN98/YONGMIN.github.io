@@ -14,7 +14,13 @@ Birth: 1998.08.06<bn />
 
 Blood Type: B<bn />
 
-Family: Father, Mother, Me, Syster, Brother
+Family: Father, Mother, Me, Syster, Brother <bn />
+
+Occupation: A University Student <bn />
+
+School Name: Kangwon University <bn />
+
+Major: Computer Engineering
 
 
 [kd]: http://kramdown.gettalong.org/
