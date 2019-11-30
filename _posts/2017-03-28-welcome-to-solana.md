@@ -14,7 +14,7 @@ Birth: 1998.08.06<bn />
 
 Blood Type: B<bn />
 
-Family: Father, Mother, Me, Syster, Brother <bn />
+Family: Father, Mother, Me, Sister, Brother <bn />
 
 Occupation: A University Student <bn />
 
